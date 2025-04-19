@@ -5,16 +5,19 @@ public class incrementby1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+        int num = sc.nextInt(); // 123
 
-        int sum = 0;
+        int result = 0;
+        int place = 1;
 
-        while (num != 0) {
-            int digit = num % 10;
-            digit++;
-            sum = sum + digit;
+        while (num > 0) {
+            int rem = num % 10;
+            rem = (rem + 1) % 10;
+            result = result + rem * place;
+            place = place * 10;
             num = num / 10;
         }
-        System.out.println(sum);
+
+        System.out.println(result);
     }
 }
