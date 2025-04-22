@@ -4,7 +4,7 @@ public class upperToLowerViceVersa {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter a sentance: ");
+        System.out.println("Enter a sentance: "); //hello world
         String sen = sc.nextLine();
 
         String result = "";
